@@ -7,13 +7,13 @@ function App() {
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <h1>{count}</h1>
+    <>
+      {/* <h1>{count}</h1>
       <button onClick={() => dispatch(increment())}>Increment</button>
       <button onClick={() => dispatch(decrement())}>Decrement</button>
-      <button onClick={() => dispatch(incrementByAmount(10))}>Increment by 10</button>
+      <button onClick={() => dispatch(incrementByAmount(10))}>Increment by 10</button> */}
       <HomeScreen />
-    </div>
+    </>
   )
 }
 
