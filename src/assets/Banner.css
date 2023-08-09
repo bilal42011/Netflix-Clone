@@ -88,6 +88,6 @@
 
 @media screen and (min-width: 1280px) {
     .banner__contents {
-        max-width: calc(83.33333333333334% - 6rem);
+        max-width: calc(100% - 6rem);
     }
 }

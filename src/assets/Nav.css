@@ -1,6 +1,5 @@
 .nav {
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -26,6 +25,33 @@
     height: 40px;
 }
 
+.nav__avatar {
+    height: 50px;
+}
+
+.signIn__button {
+    outline: none;
+    font-weight: 600;
+    border: 0;
+    user-select: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    font-size: 0.875rem;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+.signIn__button:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background: rgb(193, 17, 25);
+}
+
 @media screen and (max-width: 959.98px) {
     .nav__contents {
         height: 5rem;
@@ -48,6 +74,6 @@
 
 @media screen and (min-width: 1280px) {
     .nav__contents {
-        max-width: calc(83.33333333333334% - 6rem);
+        max-width: calc(var(--nav-total-width) - 6rem);
     }
 }
