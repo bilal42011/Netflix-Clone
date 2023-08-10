@@ -4,6 +4,7 @@ export { default as netflixLogo } from "./netflix-logo.png";
 export { default as bannerStyles } from "./Banner.css";
 export { default as rowStyles } from "./Row.css";
 export { default as netflexAvatar } from "./Netflix-avatar.png";
+export { default as profileBannerStyles } from "./ProfileBanner.css";
 
 
 

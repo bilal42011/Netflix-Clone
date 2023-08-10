@@ -47,7 +47,6 @@ const Nav = () => {
                     !user && <button className="signIn__button">Sign In</button>
                 }
                 {
-
                     user && <img src={netflexAvatar} className="nav__avatar" />
                 }
             </div>

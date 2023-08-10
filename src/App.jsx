@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement, incrementByAmount } from './app/slices/counterSlice'
-import HomeScreen from './components/HomeScreen';
 import { Outlet } from 'react-router-dom';
 import Nav from "./components/Nav";
 

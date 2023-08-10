@@ -1,13 +1,14 @@
 import React from 'react'
 import { homeScreenStyles } from '@/assets'
-import Banner from './Banner'
-import Row from './Row';
+import ProfileBanner from '@/components/ProfileBanner';
+import Row from '@/components/Row';
 import requests from '@/config/Requests';
 
-const HomeScreen = () => {
+const HomeUserScreen = () => {
+
     return (
         <div className='homeScreen'>
-            <Banner />
+            <ProfileBanner />
             <div className='rows__wrapper'>
                 <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
                 <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
@@ -17,9 +18,10 @@ const HomeScreen = () => {
                 <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
                 <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
                 <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+
             </div>
         </div>
     )
 }
 
-export default HomeScreen
+export default HomeUserScreen
