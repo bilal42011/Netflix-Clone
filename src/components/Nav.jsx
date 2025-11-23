@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react"
 import { navStyles, netflixLogo, netflexAvatar } from "../assets"
+import Button from "./Button";
 
-const user = true;
+const user = false;
 
 const Nav = () => {
     const [show, handleShow] = useState(false);
@@ -44,7 +45,7 @@ const Nav = () => {
             <div className="nav__contents">
                 <img src={netflixLogo} className="nav__logo" />
                 {
-                    !user && <button className="signIn__button">Sign In</button>
+                    !user && <Button customButtonClass="sign-in__button">Sign In</Button>
                 }
                 {
                     user && <img src={netflexAvatar} className="nav__avatar" />

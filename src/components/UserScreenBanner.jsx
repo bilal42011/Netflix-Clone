@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import axios from "@/config/axios";
 import requests from "@/config/Requests";
 import Banner from "./Banner";
-import { profileBannerStyles } from "@/assets";
+import { userScreenBannerStyles } from "@/assets";
 
 
 console.log(requests);
 
-const ProfileBanner = () => {
+const UserScreenBanner = () => {
     const [movie, setMovie] = useState(null);
 
 
@@ -40,4 +40,4 @@ const ProfileBanner = () => {
     )
 }
 
-export default ProfileBanner;
+export default UserScreenBanner;

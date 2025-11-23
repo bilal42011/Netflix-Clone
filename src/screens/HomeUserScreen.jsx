@@ -1,6 +1,6 @@
 import React from 'react'
-import { homeScreenStyles } from '@/assets'
-import ProfileBanner from '@/components/ProfileBanner';
+import { homeUserScreenStyles } from '@/assets'
+import UserScreenBanner from '@/components/UserScreenBanner';
 import Row from '@/components/Row';
 import requests from '@/config/Requests';
 
@@ -8,7 +8,7 @@ const HomeUserScreen = () => {
 
     return (
         <div className='homeScreen'>
-            <ProfileBanner />
+            <UserScreenBanner />
             <div className='rows__wrapper'>
                 <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
                 <Row title="Trending Now" fetchUrl={requests.fetchTrending} />

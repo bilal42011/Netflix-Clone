@@ -1,0 +1,104 @@
+.home__banner__wrapper {
+    min-height: 32rem;
+    padding: 8.5rem 0 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.home__banner__contents {
+    margin: auto;
+    max-width: calc(100% - 3rem);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.home__banner_title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home__banner__desc {
+    margin: 1rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.home__banner__signup-wrapper {
+    margin: 1.5rem 0 0;
+    max-width: 61.5rem;
+    padding: 0 1.5rem;
+}
+
+.home__banner__singup-desc {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+}
+
+.home__banner__signup-form {
+    width: 100%;
+    margin: 1rem auto 0;
+    max-width: 36.625rem;
+    display: flex;
+}
+
+.home__banner__input-wrapper {
+    flex: 1 1 auto;
+}
+
+.get-started__button{
+    padding: 0.75rem 1.5rem !important;
+    flex: 0 0 auto !important;
+    margin-left: 0.5rem !important;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    min-height: 3.5rem !important;
+}
+
+@media screen and (min-width: 600px) {
+    .home__banner__contents {
+        max-width: calc(100% - 4rem);
+    }
+
+    .home__banner__signup-wrapper {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home__banner__contents {
+        max-width: calc(100% - 4rem);
+    }
+
+    .home__banner__wrapper {
+        min-height: 43.75rem;
+        padding: 9.775rem 0 4rem;
+    }
+
+    .home__banner_title {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .home__banner__desc {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .home__banner__signup-wrapper {
+        padding: 0 2.625rem;
+    }
+
+    .home__banner__singup-desc {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .home__banner__contents {
+        max-width: calc(83.33333333333334% - 6rem);
+    }
+}

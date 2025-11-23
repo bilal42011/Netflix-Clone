@@ -1,11 +1,10 @@
 import { bannerStyles } from "@/assets";
 
 
-
-const Banner = ({ children, image }) => {
+const Banner = ({ children, image, wrapperCustomClass }) => {
     console.log(children);
     return (
-        <div className="banner">
+        <div className={`banner ${wrapperCustomClass}`}>
             <div className="banner__img-gradient">
                 <img src={image}
                     className="banner__img" />

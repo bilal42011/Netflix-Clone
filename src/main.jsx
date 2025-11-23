@@ -12,10 +12,15 @@ import {
   RouterProvider,
   createRoutesFromElements
 } from "react-router-dom";
+import HomeScreen from './screens/HomeScreen.jsx'
+
+const user = false;
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<App />}>
-    <Route index element={<HomeUserScreen />} />
+    {
+      user ? <Route index element={<HomeUserScreen />} /> : <Route index element={<HomeScreen />} />
+    }
     <Route path="/login" element={<LoginScreen />} />
     <Route path="/test" element={<div>Test</div>} />
   </Route>

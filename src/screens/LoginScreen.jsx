@@ -1,8 +1,8 @@
-
+import LoginScreenBanner from "../components/LoginScreenBanner"
 
 const LoginScreen = () => {
     return (
-        <div>LoginScreen</div>
+        <LoginScreenBanner />
     )
 }
 
